@@ -125,8 +125,8 @@ class _HomeScreenState extends State<HomeScreen> {
             title: Text('ข้อมูลผู้ใช้'),
             trailing: Icon(Icons.keyboard_arrow_right),
             onTap: () {
-              // Update the state of the app
-              // ...
+              Navigator.of(context).pop();
+              Navigator.of(context).pushNamed('/users');
             },
           ),
           ListTile(
